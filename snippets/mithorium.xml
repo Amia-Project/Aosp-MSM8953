@@ -12,4 +12,10 @@
  <!-- Common - Kernel 4.19 -->
   <project path="vendor/xiaomi/mithorium-common-4.19" name="proprietary_vendor_xiaomi_mithorium-common-4.19" groups="device" remote="mi-thorium"/>
 
+  <!-- Hardware -->
+  <project path="hardware/mithorium/aosp" name="android_hardware_mithorium_aosp" groups="device" remote="mi-thorium" revision="a16">
+    <linkfile src="guards/guard_hardware_qcom.mk" dest="hardware/qcom/Android.mk" />
+  </project>
+  
+
 </manifest>
