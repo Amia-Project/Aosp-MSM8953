@@ -1021,8 +1021,9 @@
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
 
-  <!-- Miku UI -->
+  <!-- cafebabe stuff -->
   <include name="snippets/lineage.xml" />
+  <include name="snippets/mithorium.xml" />
 
   <!-- END open-source projects -->
 
