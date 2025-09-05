@@ -1020,6 +1020,10 @@
   <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" groups="trusty,pdk">
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
+
+  <!-- Miku UI -->
+  <include name="snippets/lineage.xml" />
+
   <!-- END open-source projects -->
 
 </manifest>
