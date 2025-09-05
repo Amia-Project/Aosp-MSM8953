@@ -4,8 +4,16 @@
            fetch="https://github.com/Mi-Thorium"
            revision="a15_qpr2/master" />
 
+  <remote  name="snow"
+           fetch="https://github.com/Amia-Project"
+           revision="a15_qpr2/master" />
+
+  <remote name="snow1"
+            fetch="https://github.com/Snow-Irony"
+            revision="lineage-20.0" />
+
  <!-- Common -->
-  <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="mi-thorium" revision="a16/aosp"/>
+  <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common"     groups="device" remote="snow" revision="a16/aosp"/>
   <project path="vendor/xiaomi/mithorium-common" name="proprietary_vendor_xiaomi_mithorium-common" groups="device" remote="mi-thorium"/>
   <project path="vendor/xiaomi/mithorium-common-graphics" name="proprietary_vendor_xiaomi_mithorium-common-graphics" groups="device" remote="mi-thorium"/>
 
@@ -37,6 +45,14 @@
   <project path="hardware/mithorium/audio/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="android_hardware_qcom_audio_mithorium" groups="device" remote="mi-thorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
   <project path="hardware/mithorium/media/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="android_hardware_qcom_media_mithorium" groups="device" remote="mi-thorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
   <project path="hardware/mithorium/display/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0/hal" name="android_hardware_qcom_display_mithorium" groups="device" remote="mi-thorium" revision="mithorium/LA.UM.9.6.4.r2-04300-89xx.QSSI13r2.0"/>
+
+ <!-- Common -->
+  <project path="device/xiaomi/vince" name="device_xiaomi_vince"     groups="device" remote="snow" revision="a16"/>
+  <project path="vendor/xiaomi/vince" name="vendor_xiaomi_vince" groups="device" remote="snow" revision="lineage-21.0"/>
+  <project path="kernel/xiaomi/vince" name="android_kernel_qcom_msm8953" groups="device" remote="snow" revision="Xiaomi-Snow-Unified"/>
+
+ <!-- MSM8953-CAMERA-COMMON -->
+  <project path="device/xiaomi/vince/camera"        name="device_xiaomi-msm8953_camera"        groups="device" remote="snow1" revision="k4.9" />
   
 
 </manifest>
